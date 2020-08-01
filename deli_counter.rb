@@ -10,6 +10,6 @@ def line(customers)
       line_order.push("#{count}. #{name}")
       count += 1
     end
-    puts line_order.join
+    puts line_order.join(" ")
   end
 end
