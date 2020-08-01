@@ -1,15 +1,33 @@
 # Write your code here.
 
+# def line(customers)
+#   if customers.length == 0
+#     puts "The line is currently empty."
+#   else
+#     count = 1
+#     line_order = ["The line is currently:"]
+#     customers.each do |name|
+#       line_order.push("#{count}. #{name}")
+#       count += 1
+#     end
+#     puts line_order.join(" ")
+#   end
+# end
+
 def line(customers)
   if customers.length == 0
     puts "The line is currently empty."
   else
-    count = 1
+    
     line_order = ["The line is currently:"]
     customers.each do |name|
-      line_order.push("#{count}. #{name}")
-      count += 1
+      line_order.push("#{name.index}. #{name}")      
     end
     puts line_order.join(" ")
   end
+end
+
+def take_a_number(deli, name)
+  deli.push(name)
+  
 end
