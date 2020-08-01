@@ -6,7 +6,7 @@ def line(customers)
   else
     count = 1
     customers.each do |name|
-      return "The line is currently: #{count}. #{name}"
+      puts "The line is currently: #{count}. #{name}"
       count += 1
     end
   end
