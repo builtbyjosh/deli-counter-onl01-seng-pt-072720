@@ -5,9 +5,11 @@ def line(customers)
     puts "The line is currently empty."
   else
     count = 1
+    line_order = ["The line is currently: "]
     customers.each do |name|
-      puts "The line is currently: #{count}. #{name}"
+      line_order.push("#{count}. #{name}")
       count += 1
     end
+    return line_order.join
   end
 end
