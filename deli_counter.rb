@@ -2,7 +2,7 @@
 
 def line(customers)
   if customers == 0
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else
     count = 1
     customers.each do |name|
