@@ -1,7 +1,7 @@
 # Write your code here.
 
 def line(customers)
-  if customers == 0
+  if customers.length == 0
     puts "The line is currently empty."
   else
     count = 1
